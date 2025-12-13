@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App de Rugby</string>
+    <string name="country">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra</string>
+    <string name="exit_button">SALIR</string>
+    <string name="player_name">JONNY WILKINSON</string>
+    <string name="position">Posición: Apertura</string>
+    <string name="team1">• Newcastle Falcons (1997-2009)</string>
+    <string name="team2">• Toulon (2009-2014)</string>
+    <string name="team3">• Selección inglesa (1998-2011)</string>
+    <string name="team_history">Historial de Equipos:</string>
+    <string name="title">🏉 APP DE RUGBY 🏉</string>
+</resources>

@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable jonny_wilkinson
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap jonny_wilkinson
+mipmap jonny_wilkinson_foreground
+mipmap jonny_wilkinson_round
+string app_name
+string country
+string exit_button
+string player_name
+string position
+string team1
+string team2
+string team3
+string team_history
+string title
+style Theme.RugbyApp
+xml backup_rules
+xml data_extraction_rules
