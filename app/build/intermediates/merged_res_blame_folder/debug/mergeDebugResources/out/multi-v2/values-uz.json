@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.rugbyapp-mergeDebugResources-32:/values-uz/values-uz.xml",
+            "outputFile": "com.example.rugbyapp-mergeDebugResources-34:/values-uz/values-uz.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abdelmouhssine\\.gradle\\caches\\8.13\\transforms\\596b6ac8f9b10f42d23be45d1f032b53\\transformed\\ui-release\\res\\values-uz\\values-uz.xml",

@@ -7,9 +7,11 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable dan_carter
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable jonny_wilkinson
+drawable sergio_parisse
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap jonny_wilkinson

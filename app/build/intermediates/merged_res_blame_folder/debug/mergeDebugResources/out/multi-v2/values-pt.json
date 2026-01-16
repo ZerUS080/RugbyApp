@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.rugbyapp-mergeDebugResources-32:/values-pt/values-pt.xml",
+            "outputFile": "com.example.rugbyapp-mergeDebugResources-34:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abdelmouhssine\\.gradle\\caches\\8.13\\transforms\\2915ac4a79e79f07bf53eedf72d0e7fb\\transformed\\core-1.17.0\\res\\values-pt\\values-pt.xml",

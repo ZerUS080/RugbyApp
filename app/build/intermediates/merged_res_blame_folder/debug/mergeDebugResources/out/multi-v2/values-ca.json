@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.rugbyapp-mergeDebugResources-32:/values-ca/values-ca.xml",
+            "outputFile": "com.example.rugbyapp-mergeDebugResources-34:/values-ca/values-ca.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abdelmouhssine\\AndroidStudioProjects\\RugbyApp\\app\\src\\main\\res\\values-ca\\strings.xml",
