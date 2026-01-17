@@ -7,5 +7,6 @@ data class Player(
     val position: String,
     val nationality: String,
     val currentTeam: String,
-    val imageName: String
+    val imageName: String,
+    val imageUrl: String = ""
 )

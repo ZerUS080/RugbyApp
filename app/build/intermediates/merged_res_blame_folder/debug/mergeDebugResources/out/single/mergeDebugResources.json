@@ -1,142 +1,142 @@
 [
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxhdpi_jonny_wilkinson.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxhdpi\\jonny_wilkinson.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxxhdpi_jonny_wilkinson_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxxhdpi/jonny_wilkinson_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xhdpi_jonny_wilkinson_foreground.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xhdpi/jonny_wilkinson_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxhdpi_jonny_wilkinson_foreground.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxhdpi\\jonny_wilkinson_foreground.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\xml_network_security_config.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\xml\\network_security_config.xml"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxxhdpi_jonny_wilkinson_foreground.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxxhdpi\\jonny_wilkinson_foreground.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-mdpi_jonny_wilkinson_foreground.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-mdpi/jonny_wilkinson_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-mdpi_jonny_wilkinson_foreground.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-mdpi\\jonny_wilkinson_foreground.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-mdpi_jonny_wilkinson.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-mdpi\\jonny_wilkinson.webp"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_jonny_wilkinson.jpg.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/jonny_wilkinson.jpg"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xhdpi_jonny_wilkinson_foreground.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xhdpi\\jonny_wilkinson_foreground.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\drawable_dan_carter.jpg.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\drawable\\dan_carter.jpg"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-hdpi_jonny_wilkinson.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-hdpi/jonny_wilkinson.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xhdpi_jonny_wilkinson_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xhdpi\\jonny_wilkinson_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-hdpi_jonny_wilkinson_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-hdpi/jonny_wilkinson_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\drawable_jonny_wilkinson.jpg.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\drawable\\jonny_wilkinson.jpg"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-hdpi_jonny_wilkinson.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-hdpi\\jonny_wilkinson.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-mdpi_jonny_wilkinson_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-mdpi/jonny_wilkinson_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xhdpi_jonny_wilkinson_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xhdpi/jonny_wilkinson_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-mdpi_jonny_wilkinson.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-mdpi/jonny_wilkinson.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxxhdpi_jonny_wilkinson.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxxhdpi\\jonny_wilkinson.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\xml\\backup_rules.xml"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_dan_carter.jpg.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/dan_carter.jpg"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-hdpi_jonny_wilkinson_foreground.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-hdpi\\jonny_wilkinson_foreground.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xhdpi_jonny_wilkinson.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xhdpi/jonny_wilkinson.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-hdpi_jonny_wilkinson_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-hdpi\\jonny_wilkinson_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxhdpi_jonny_wilkinson.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxhdpi/jonny_wilkinson.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxhdpi_jonny_wilkinson_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxhdpi/jonny_wilkinson_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxxhdpi_jonny_wilkinson_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxxhdpi\\jonny_wilkinson_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxxhdpi_jonny_wilkinson.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxxhdpi/jonny_wilkinson.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-hdpi_jonny_wilkinson_foreground.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-hdpi/jonny_wilkinson_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_sergio_parisse.jpg.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/sergio_parisse.jpg"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxhdpi_jonny_wilkinson_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxhdpi\\jonny_wilkinson_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxhdpi_jonny_wilkinson_foreground.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxhdpi/jonny_wilkinson_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-xhdpi_jonny_wilkinson.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-xhdpi\\jonny_wilkinson.webp"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_placeholder.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\drawable_sergio_parisse.jpg.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\drawable\\sergio_parisse.jpg"
+        "merged": "com.example.rugbyapp-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-mdpi_jonny_wilkinson_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-mdpi\\jonny_wilkinson_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/mipmap-xxxhdpi_jonny_wilkinson_foreground.webp.flat",
+        "source": "com.example.rugbyapp-main-38:/mipmap-xxxhdpi/jonny_wilkinson_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-debug-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Abdelmouhssine\\.gradle\\daemon\\8.13\\com.example.rugbyapp-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.rugbyapp-debug-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.rugbyapp-main-38:/drawable/ic_launcher_background.xml"
     }
 ]

@@ -11,6 +11,7 @@ drawable dan_carter
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable jonny_wilkinson
+drawable placeholder
 drawable sergio_parisse
 mipmap ic_launcher
 mipmap ic_launcher_round

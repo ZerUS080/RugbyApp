@@ -1,43 +1,29 @@
 package com.example.rugbyapp
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.AsyncImage
 import com.example.rugbyapp.ui.theme.RugbyAppTheme
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,82 +34,34 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PlayerListScreen(onExitClick = { finish() })
+                    PlayerListScreen()
                 }
             }
         }
     }
 }
 
-fun getSamplePlayers(): List<Player> {
-    return listOf(
-        Player(
-            id = 1,
-            name = "Jonny Wilkinson",
-            birthDate = "1979-05-25",
-            position = "Fly-half",
-            nationality = "Inglaterra",
-            currentTeam = "Retirado",
-            imageName = "jonny_wilkinson.jpg"
-        ),
-        Player(
-            id = 2,
-            name = "Sergio Parisse",
-            birthDate = "1983-09-12",
-            position = "Number 8",
-            nationality = "Italia",
-            currentTeam = "Retirado",
-            imageName = "sergio_parisse.jpg"
-        ),
-        Player(
-            id = 3,
-            name = "Dan Carter",
-            birthDate = "1982-03-05",
-            position = "Fly-half",
-            nationality = "Nueva Zelanda",
-            currentTeam = "Retirado",
-            imageName = "dan_carter.jpg"
-        )
-    )
-}
-
 @Composable
-fun PlayerListScreen(onExitClick: () -> Unit) {
+fun PlayerListScreen() {
     val players = remember { mutableStateOf(emptyList<Player>()) }
     val isLoading = remember { mutableStateOf(true) }
-    val errorMessage = remember { mutableStateOf<String?>(null) }
+    val serverConnected = remember { mutableStateOf(false) }
+    val coroutineScope = rememberCoroutineScope()
 
     LaunchedEffect(Unit) {
-        Log.d("MainActivity", " Iniciando carga de jugadores desde servidor...")
+        coroutineScope.launch {
+            try {
+                serverConnected.value = GestorSQLExternModern.testConnection()
 
-        try {
-            val serverPlayers = NetworkManager.getPlayers()
-            Log.d("MainActivity", " Jugadores obtenidos del servidor: ${serverPlayers.size}")
-
-            val nombres = serverPlayers.joinToString { it.name }
-            Log.d("MainActivity", " Orden recibido: $nombres")
-
-            if (serverPlayers.isNotEmpty()) {
-                players.value = serverPlayers
-                errorMessage.value = null
-                Log.d("MainActivity", " Usando datos DEL SERVIDOR")
-
-                serverPlayers.forEach { player ->
-                    Log.d("MainActivity", "    ${player.name} (ID: ${player.id})")
+                if (serverConnected.value) {
+                    players.value = GestorSQLExternModern.getPlayers()
                 }
-            } else {
-                players.value = getSamplePlayers()
-                errorMessage.value = " Usando datos locales (servidor vacío)"
-                Log.d("MainActivity", " Servidor vacío, usando datos LOCALES")
+            } catch (e: Exception) {
+                serverConnected.value = false
+            } finally {
+                isLoading.value = false
             }
-        } catch (e: Exception) {
-            Log.e("MainActivity", " Error: ${e.message}")
-            players.value = getSamplePlayers()
-            errorMessage.value = " Error: ${e.message}. Usando datos locales."
-            Log.d("MainActivity", " Error de conexión, usando datos LOCALES")
         }
-
-        isLoading.value = false
     }
 
     Column(
@@ -133,170 +71,151 @@ fun PlayerListScreen(onExitClick: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "🏉 Jugadores de Rugby",
-            fontSize = 28.sp,
+            text = "Jugadores de Rugby",
+            fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 20.dp)
         )
 
-        if (errorMessage.value != null) {
-            Text(
-                text = errorMessage.value!!,
-                color = if (errorMessage.value!!.contains("")) MaterialTheme.colorScheme.primary
-                else MaterialTheme.colorScheme.error,
-                modifier = Modifier.padding(bottom = 16.dp)
-            )
-        }
-
         if (isLoading.value) {
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                CircularProgressIndicator()
-                Spacer(modifier = Modifier.height(16.dp))
-                Text(" Conectando con el servidor...")
-                Text(" URL: http://10.0.2.2/rugby_app_v2/api/get_players.php", fontSize = 12.sp)
-            }
+            LoadingState()
         } else {
-            LazyColumn(
-                modifier = Modifier.weight(1f),
-                verticalArrangement = Arrangement.spacedBy(16.dp)
-            ) {
-                items(players.value) { player ->
-                    PlayerCard(player = player)
-                }
+            if (serverConnected.value && players.value.isNotEmpty()) {
+                PlayersList(players = players.value)
+            } else if (!serverConnected.value) {
+                ServerUnavailableState()
+            } else {
+                EmptyState()
             }
-            Spacer(modifier = Modifier.height(20.dp))
+        }
+    }
+}
 
-            Button(
-                onClick = onExitClick,
-                modifier = Modifier.padding(top = 10.dp)
-            ) {
-                Text(" Salir", fontSize = 18.sp)
-            }
-
+@Composable
+fun LoadingState() {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            CircularProgressIndicator()
+            Spacer(modifier = Modifier.height(16.dp))
+            Text("Conectando con el servidor...")
             Text(
-                text = "Total jugadores: ${players.value.size}",
-                fontSize = 14.sp,
-                color = MaterialTheme.colorScheme.secondary,
-                modifier = Modifier.padding(top = 8.dp)
+                text = "URL: ${GestorSQLExternModern.getBaseUrl()}",
+                fontSize = 12.sp,
+                color = MaterialTheme.colorScheme.secondary
             )
         }
     }
 }
 
+@Composable
+fun ServerUnavailableState() {
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = "SERVIDOR NO DISPONIBLE",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.error,
+                textAlign = TextAlign.Center
+            )
+
+            Text(
+                text = "No se puede conectar a:",
+                fontSize = 16.sp
+            )
+
+            Text(
+                text = GestorSQLExternModern.getBaseUrl(),
+                fontSize = 14.sp,
+                color = MaterialTheme.colorScheme.secondary,
+                textAlign = TextAlign.Center
+            )
+
+            Text(
+                text = "Verifica que:\n" +
+                        "1. XAMPP esté ejecutándose (Apache)\n" +
+                        "2. Los archivos PHP estén en la carpeta correcta\n" +
+                        "3. La URL sea accesible desde el emulador",
+                fontSize = 14.sp,
+                color = MaterialTheme.colorScheme.secondary,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+
+@Composable
+fun EmptyState() {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Text("Servidor disponible pero sin datos")
+    }
+}
+
+@Composable
+fun PlayersList(players: List<Player>) {
+    LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        items(players) { player ->
+            PlayerCard(player = player)
+        }
+    }
+}
 
 @Composable
 fun PlayerCard(player: Player) {
-    var showDialog by remember { mutableStateOf(false) }
-
-    if (showDialog) {
-        AlertDialog(
-            onDismissRequest = { showDialog = false },
-            title = {
-                Text(
-                    text = player.name,
-                    fontWeight = FontWeight.Bold
-                )
-            },
-            text = {
-                Column {
-                    Text(" Posición: ${player.position}", fontSize = 16.sp)
-                    Text(" Nacionalidad: ${player.nationality}", fontSize = 16.sp)
-                    Text(" Fecha nacimiento: ${player.birthDate}", fontSize = 16.sp)
-                    Text(" Equipo actual: ${player.currentTeam}", fontSize = 16.sp)
-
-                    Spacer(modifier = Modifier.height(12.dp))
-
-                    Text(" Información técnica:", fontWeight = FontWeight.Bold)
-                    Text("   • ID en base de datos: ${player.id}", fontSize = 14.sp)
-                    Text("   • Nombre imagen: ${player.imageName}", fontSize = 14.sp)
-                    Text("   • Origen: Servidor MySQL", fontSize = 14.sp, color = MaterialTheme.colorScheme.primary)
-
-                    Spacer(modifier = Modifier.height(8.dp))
-
-
-                    Text(
-                        text = "Estos datos vienen de la base de datos rugby_app_v2",
-                        fontSize = 12.sp,
-                        color = MaterialTheme.colorScheme.secondary
-                    )
-                }
-            },
-            confirmButton = {
-                Button(onClick = { showDialog = false }) {
-                    Text("Cerrar")
-                }
-            }
-        )
-    }
+    val context = LocalContext.current
 
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .clickable {
-                showDialog = true
-                Log.d("PlayerCard", " Clic en: ${player.name} (ID: ${player.id})")
+                val intent = Intent(context, PlayerActivity::class.java)
+                intent.putExtra("player_id", player.id)
+                context.startActivity(intent)
             },
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
+            modifier = Modifier.padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            val imageResId = when (player.imageName) {
-                "jonny_wilkinson.jpg" -> R.drawable.jonny_wilkinson
-                "sergio_parisse.jpg" -> R.drawable.sergio_parisse
-                "dan_carter.jpg" -> R.drawable.dan_carter
-                else -> R.drawable.jonny_wilkinson
+            val imageUrl = if (player.imageUrl.isNotEmpty()) {
+                player.imageUrl
+            } else {
+                "${GestorSQLExternModern.getPlayersImgPath()}${player.imageName}"
             }
 
-            Image(
-                painter = painterResource(id = imageResId),
+            AsyncImage(
+                model = imageUrl,
                 contentDescription = player.name,
-                modifier = Modifier.size(80.dp)
+                modifier = Modifier
+                    .size(56.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop,
+                placeholder = painterResource(id = R.drawable.placeholder),
+                error = painterResource(id = R.drawable.placeholder)
             )
 
-            Spacer(modifier = Modifier.size(16.dp))
+            Spacer(modifier = Modifier.width(16.dp))
 
-            Column(modifier = Modifier.weight(1f)) {
+            Column {
                 Text(
                     text = player.name,
-                    fontSize = 20.sp,
-                    style = MaterialTheme.typography.titleMedium
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp
                 )
-                Text(
-                    text = player.position,
-                    fontSize = 16.sp,
-                    color = MaterialTheme.colorScheme.secondary
-                )
-                Row {
+                if (player.position.isNotEmpty()) {
                     Text(
-                        text = player.nationality,
-                        fontSize = 14.sp
-                    )
-                    Spacer(modifier = Modifier.size(8.dp))
-                    Text(
-                        text = "• ${player.currentTeam}",
-                        fontSize = 14.sp
+                        text = player.position,
+                        color = MaterialTheme.colorScheme.secondary
                     )
                 }
-                Text(
-                    text = "ID: ${player.id}",
-                    fontSize = 12.sp,
-                    color = MaterialTheme.colorScheme.primary
-                )
             }
-
-            Text(
-                text = "",
-                fontSize = 20.sp,
-                modifier = Modifier.padding(start = 8.dp)
-            )
         }
     }
 }

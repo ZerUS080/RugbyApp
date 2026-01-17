@@ -8,7 +8,6 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="36" />
 
-    <!-- Permisos de internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
@@ -38,6 +37,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.rugbyapp.PlayerActivity"
+            android:exported="false" />
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />

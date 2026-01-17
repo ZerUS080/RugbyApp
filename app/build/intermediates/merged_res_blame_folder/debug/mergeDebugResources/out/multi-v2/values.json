@@ -76,6 +76,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Abdelmouhssine\\.gradle\\caches\\8.13\\transforms\\52e3bb30666cdd36d131e724a12a86d1\\transformed\\coil-base-2.6.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    },
+                    "to": {
+                        "startLines": "76",
+                        "startColumns": "4",
+                        "startOffsets": "4732",
+                        "endColumns": "49",
+                        "endOffsets": "4777"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Abdelmouhssine\\AndroidStudioProjects\\RugbyApp\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
                         "startLines": "3",
@@ -281,23 +298,6 @@
                         "startOffsets": "6536",
                         "endColumns": "53",
                         "endOffsets": "6585"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Abdelmouhssine\\.gradle\\caches\\8.13\\transforms\\8ef98891568fabda62c7c8a44243a2e4\\transformed\\coil-base-2.5.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "49",
-                        "endOffsets": "100"
-                    },
-                    "to": {
-                        "startLines": "76",
-                        "startColumns": "4",
-                        "startOffsets": "4732",
-                        "endColumns": "49",
-                        "endOffsets": "4777"
                     }
                 },
                 {
